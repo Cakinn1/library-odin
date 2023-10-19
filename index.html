@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <section class="relative">
+      <section id="nav-border">
+        <nav>
+          <figure>
+            <h1>Library</h1>
+          </figure>
+
+          <div>
+            <h1>Login</h1>
+          </div>
+        </nav>
+      </section>
+
+      <section class="main">
+        <div class="inner-main">
+          <button id="button-main" onclick="modalOpen()">Load Form</button>
+
+          <form class="form" onsubmit="event.preventDefault(event)">
+            <div class="form-inner__div">
+              <div class="div1">
+                <div class="div2">
+                  <h1>Add a new book</h1>
+                  <p id="xicon">X</p>
+                </div>
+                <input
+                  type="text"
+                  placeholder="title"
+                  onchange="titleInput(event)"
+                />
+                <input
+                  type="text"
+                  placeholder="author"
+                  onchange="authorInput(event)"
+                />
+                <input
+                  type="number"
+                  placeholder="page number"
+                  onchange="pageInput(event)"
+                />
+                <input
+                  type="checkbox"
+                  required
+                  placeholder="read?"
+                  onchange="readInput(event)"
+                />
+                <!-- <input
+                  type="text"
+                  placeholder="submit"
+                  onchange="submitInput(event)"
+                /> -->
+                <button onclick="addBookToLibrary()">click</button>
+
+              </div>
+
+            </div>
+          </form>
+          <div id="modal">
+            <div>
+                d
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <footer>
+        <p>Copyright &copy; 2023 Cakinn1</p>
+      </footer>
+    </section>
+  </body>
+  <script src="/app.js"></script>
+</html>
